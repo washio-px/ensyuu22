@@ -1,0 +1,35 @@
+#既にdictionaryテーブルが定義されていた場合に削除する
+DROP TABLE IF EXISTS java_web_system.dictionary;
+#dictionaryテーブルを作成する
+CREATE TABLE java_web_system.dictionary(
+	id INT NOT NULL  AUTO_INCREMENT ,
+	genre CHAR(50)  NOT NULL ,
+	keyword1 CHAR(50)  NOT NULL ,
+	keyword2 CHAR(50)  NOT NULL ,
+	PRIMARY KEY(id)
+)ENGINE=InnoDB DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+#employeeテーブルへデータを登録する
+INSERT INTO java_web_system.dictionary VALUES(1,'season','Spring','春');
+INSERT INTO java_web_system.dictionary VALUES(2,'season','Summer','夏');
+INSERT INTO java_web_system.dictionary VALUES(3,'season','Autumn','秋');
+INSERT INTO java_web_system.dictionary VALUES(4,'season','Winter','冬');
+INSERT INTO java_web_system.dictionary VALUES(5,'month','January','1月');
+INSERT INTO java_web_system.dictionary VALUES(6,'month','February','2月');
+INSERT INTO java_web_system.dictionary VALUES(7,'month','March','3月');
+INSERT INTO java_web_system.dictionary VALUES(8,'month','April','4月');
+INSERT INTO java_web_system.dictionary VALUES(9,'month','May','5月');
+INSERT INTO java_web_system.dictionary VALUES(10,'month','June','6月');
+INSERT INTO java_web_system.dictionary VALUES(11,'month','July','7月');
+INSERT INTO java_web_system.dictionary VALUES(12,'month','August','8月');
+INSERT INTO java_web_system.dictionary VALUES(13,'month','September','9月');
+INSERT INTO java_web_system.dictionary VALUES(14,'month','October','10月');
+INSERT INTO java_web_system.dictionary VALUES(15,'month','November','11月');
+INSERT INTO java_web_system.dictionary VALUES(16,'month','December','12月');
+INSERT INTO java_web_system.dictionary VALUES(17,'week','Sunday','日曜日');
+INSERT INTO java_web_system.dictionary VALUES(18,'week','Monday','月曜日');
+INSERT INTO java_web_system.dictionary VALUES(19,'week','Tuesday','火曜日');
+INSERT INTO java_web_system.dictionary VALUES(20,'week','Wednesday','水曜日');
+INSERT INTO java_web_system.dictionary VALUES(21,'week','Thursday','木曜日');
+INSERT INTO java_web_system.dictionary VALUES(22,'week','Friday','金曜日');
+INSERT INTO java_web_system.dictionary VALUES(23,'week','Saturday','土曜日');
